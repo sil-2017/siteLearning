@@ -1,0 +1,134 @@
+@import './global_styles';
+
+nav{
+  background-color: #1B2B34;
+}
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  // align-items: baseline;
+  &-menu{
+  
+    ul{
+      list-style-type: none;
+      display: inline-flex;
+      li{
+        width: 110px;
+        height: 45px;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
+        text-align: center;
+        a{
+          text-decoration: none;
+          color: white;
+          font-size:18px;
+          font-weight: 500;
+          margin-top: 8px;
+          display: block;
+        
+        }
+      }
+    }
+  }
+}
+
+.dropdown-menu {
+	width:330px;
+}
+ 
+ 
+i {
+  font-size: 25px;
+	margin-right: 12px;
+}
+
+.select-btn {
+	display: flex;
+	height:45px;
+  background: transparent;
+	padding: 20px;
+	font-size: 18px;
+	font-weight: 400;
+	align-items: center;
+	cursor: pointer;
+	justify-content: space-between;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+  color: white;
+  }
+
+  .options {
+	position: absolute;
+	width:330px;
+	overflow-y: auto;
+  height: auto;
+	padding:4px;
+	animation-name:fadeInDown;
+	animation-duration: 0.35s;
+	animation-fill-mode: both;
+	display: none;
+  }
+
+  .option {
+	display: flex;
+	height:45px;
+	cursor: pointer;
+	padding: 0 16px;
+	align-items: center;
+	background: #273E4B;
+  box-shadow: 0 0 10px rgba(18, 229, 18, 0.2);
+  border-bottom: 1px solid rgba($color: $primary, $alpha: 0.7);
+    span{
+      color: white;
+    }
+  }
+
+  .option:hover {
+    background:#343D42;
+	}
+
+  .select-btn  i{
+    font-size: 25px;
+    transition: 0.3s;
+  }
+  
+  
+  .dropdown-menu.active .select-btn i {
+    transform: rotate(-180deg);
+  }
+  
+  
+  .dropdown-menu.active .options{
+    display: block;
+    opacity: 0;
+    z-index: 10;
+    animation-name:fadeInUp;
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+  }
+
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 30px, 0);
+	opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  to {
+    transform: translate3d(0, 20px, 0);
+    opacity: 0;
+  }
+}
+
+// https://htmlacademy.ru/courses/299/run/1

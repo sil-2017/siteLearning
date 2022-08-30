@@ -1,0 +1,42 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: 0;
+}
+
+// colors
+$gray : #f6f6f8;
+// $primary : #e3774c;
+$primary : #3b1f14;
+$link : #4088FC;
+$black: #1a1a1a;
+$br : 16px;
+
+// media sizes
+$notebook : 1280px; 
+$tab: 1024px;
+$bigMobile: 768px;
+$smallMobile: 520px;
+$verySmallMobile: 420px;
+
+.container {
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+
+button{
+	width: 100px;
+	height: 30px;
+	color: #1a1a1a;
+	background: transparent;
+	border: 1px solid black;
+	border-radius: 5px;
+	display: block;
+	margin: 20px 1px;
+	cursor: pointer;
+	&:hover{
+		box-shadow:(inset 10px 0 10px -5px rgba(0,0,0,0.5),inset -10px 0 10px -5px rgba(0,0,0,0.5));
+	}
+}

@@ -1,0 +1,30 @@
+
+
+@mixin fnt($color, $fml, $weight, $size, $height) {
+    color:$color;
+    font-family: $fml;
+    font-style: normal;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;   
+}
+
+@mixin psAbs($width, $height) {
+    position: absolute;
+    width: $width;
+    height:$height;
+}
+
+
+  @mixin btn($color) {
+    background: $color;
+    width: 174px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid $txt-clr;
+ }
+
+
+
+//  @include btn($color);
+// @include fnt($txt-clr, $fml:'Arial',$weight:400,$size:18px,$height:23px);

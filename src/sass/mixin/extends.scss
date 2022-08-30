@@ -1,0 +1,22 @@
+.flx{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.flx-r{
+    display: flex;
+    flex-direction: row;
+}
+.flxx{
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+// @extend .flx;  
+
+// .in{
+//     background: $inp-b;
+//     border: 1px solid $inp-c;
+//     width: 100%;
+// }

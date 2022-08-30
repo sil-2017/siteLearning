@@ -1,0 +1,24 @@
+
+@import "./_mix.scss";
+// // static files
+@import "./sass_modules/nav";
+@import "./sass_modules/main";
+@import "./sass_modules/popup";
+@import "./sass_modules/footer";
+
+// global
+@import "./sass_modules/global_styles";
+@import "./sass_modules/fonts";
+
+
+body {
+	font-family: NSARegular, "Roboto", sans-serif;
+	overflow-x: hidden;
+	
+}
+
+#view{
+	width: 200px;
+	height: 60px;
+	border: 2px solid rgb(116, 44, 44);
+}
