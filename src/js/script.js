@@ -1,12 +1,16 @@
 
 import dropdown from './modules/dropdown.js';
-import popup from './modules/popup.js';
+import page from './modules/page.js';
+import tab from './modules/tab.js';
+import edit from './modules/edit.js';
 
 window.addEventListener("DOMContentLoaded", () => {
-  // "use strict";
+  "use strict";
   
   dropdown();
-  popup();
+  page();
+  tab();
+  edit();
 
 
 

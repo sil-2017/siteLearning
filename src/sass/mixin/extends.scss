@@ -12,7 +12,30 @@
     flex-wrap: wrap;
     
 }
+.flx{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
+.wh{
+    width: 100%;
+    height: auto;
+}
+
+.f-cent{
+    justify-content: center;
+    align-items: center;  
+}
+.posit-rel{
+    position: relative;
+    width: 100%;
+}
+
+.img-bg-pos{
+    background-position: center center;
+    background-size: cover;
+}
 // @extend .flx;  
 
 // .in{

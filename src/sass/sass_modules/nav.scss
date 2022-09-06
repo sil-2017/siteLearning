@@ -31,10 +31,23 @@ nav{
       }
     }
   }
+
+  &-n{
+   flex: 0 0 60%;
+
+   ul{
+    list-style-type: none;
+    display: inline-flex;
+   }
+
+  }
 }
+
+
 
 .dropdown-menu {
 	width:330px;
+  margin-right:20px;
 }
  
  

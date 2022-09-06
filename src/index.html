@@ -14,25 +14,43 @@
 	<nav>
 		<div class="container">
 			<div class="nav">
-				<div class="dropdown-menu">
-					<div class="select-btn">
-					  <span class="select-text">HTML դաս</span>
-					  <i class="bx bx-chevron-down"></i>
-					</div>
-				  
-					<ul class="options">
-					  <li class="option">
-						<span class="option-text"  id="datas" data-url="about" onclick="redirect()">introduction</span>
-					  </li>
-					  <li class="option">
-						<span class="option-text"  data-url="contact">editors</span>
-					  </li>
-					  <li class="option">
-						<span class="option-text" data-url="foot">basic</span>
-					  </li>
-					</ul>
+
+				<div  class="nav-n">
+					<ul>
+						<li>
+							<div class="present-slider-btn main-prev-btn">
+								<
+							</div>
+						</li>
+						<li>
+							<div class="dropdown-menu">
+								<div class="select-btn">
+									<span class="select-text">HTML դաս</span>
+									<i class="bx bx-chevron-down"></i>
+								  </div>
+								
+								  <ul class="options">
+									<li class="option">
+									  <span class="option-text">introduction</span>
+									</li>
+									<li class="option">
+									  <span class="option-text">editors</span>
+									</li>
+									<li class="option">
+									  <span class="option-text">basic</span>
+									</li>
+								  </ul>
+							</div>
+						</li>
+						<li>
+							<div class="present-slider-btn main-next-btn">
+								>
+							</div>
+						</li>
+					</ul>	
 				</div>
-		
+				
+				
 				<div class="nav-menu">
 					<ul>
 						<li><a href="#">Link</a></li>
@@ -44,17 +62,109 @@
 	</div>
 	</nav>
 
-	<main>
-		<div class="container">
-			<div class="main-content">
-				<div class="pop-up"></div>
-				<button id="pop">popup</button>
-				<iframe id="iframeID" src="./contact.html" width="100%" height="450px"></iframe>
-				
-				
-				<!-- <object type="text/html"id="elem" data="./about.html" width="450px" height="300px" style="overflow:auto;border:5px ridge blue">
-				</object> -->
+	<main class="main">
+		<div class="tab_header">
+			<ul>
+				<li class="tab_block">
+					 <p>
+						<span>&#8211;</span>
+						<span>&#8211;</span>
+						<!-- <span>&#8209;</span> -->
+					</p>
+					Theory
+				</li>
+				<li class="tab_block">
+					<p>
+						<span>&#9998;</span>
+					</p>
+					Example
+				</li>
+			</ul>
+		</div>
+		<div class="tab-cont">
+			
+			<div class="present tab_content">
+				<div class="present-slider">
+					<div class="present-slider-items">
+							<div class="present-slider-item">
+								<div class="present-slider-item-block2">
+									<p class="present-slider-item-text">
+										թեգը<code>&lt;head&gt;</code>նախատեսված է էջի մասին 
+										ծառայությանմասին տեղեկությունները պահելու համար: Այն առաջինը տեղադրվում է 
+										<code>&lt;html&gt;</code> թեգում՝<code>&lt;body&gt;</code> "-ից 
+										անմիջապես առաջ։"
+										<br>
+										Lorem Ipsum is simply dummy text of the printing 
+										and typesetting industry. Lorem Ipsum has been the 
+										industry's standard dummy text ever since the 1500s, 
+										when an unknown printer took a galley of type and scrambled
+										 it to make a type specimen book. It has survived not only
+										  five centuries, but also the leap into electronic typeset.
+
+									</p>
+
+								</div>
+							</div>
+						</div>
+			
+						<div class="present-slider-items">
+							   <div class="present-slider-item">
+								<div class="present-slider-item-block2">
+									<p class="present-slider-item-text">
+										Lorem Ipsum is simply dummy text of the printing 
+										and typesetting industry. Lorem Ipsum has been the 
+										industry's standard dummy text ever since the 1500s, 
+										when an unknown printer took a galley of type and scrambled
+										 it to make a type specimen book. It has survived not only
+										  five centuries, but also the leap into electronic typesetting,
+										   remaining essentially unchanged. It was popularised in the 
+										   1960s with the release of Letraset sheets containing Lorem 
+										   Ipsum passages,and more recently with desktop 
+										   publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+									</p>
+								</div>
+							   </div>
+						</div>
+			
+						<div class="present-slider-items">
+								<div class="present-slider-item">
+								
+								<div class="present-slider-item-block2">
+									<p class="present-slider-item-text">
+										Lorem Ipsum is simply dummy text of the printing 
+										and typesetting industry. Lorem Ipsum has been the 
+										industry's standard dummy text ever since the 1500s, 
+										when an unknown printer took a galley of type and scrambled
+										 it to make a type specimen book. It has survived not only
+										  five centuries, but also the leap into electronic typesetting,
+										   remaining essentially unchanged. It was popularised in the 
+										   1960s with the release of Letraset sheets containing Lorem 
+										   Ipsum passages,and more recently with desktop 
+										   publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+									</p>
+								</div>
+							</div>
+						</div>
+				</div>
 						
+			</div>
+			<div class="tab_content">
+				<div id="app">
+					<div class="row">
+						
+						<div class="square square-titled square-html">
+							<textarea></textarea>
+						</div>
+
+						<div class="square square-titled square-css">
+							<textarea></textarea>
+						</div>
+					</div>
+			
+					<div class="iframe" data-iframe></div>
+			
+				</div>
+
 			</div>
 		</div>
 	</main>
@@ -100,84 +210,7 @@
 			
 		</div>
 	</footer>
-	<script>
-			let deta = document.querySelectorAll('[data-url]');
-			let ifr = document.getElementById('iframeID');
 
-		deta.forEach(item => {
-		
-			item.addEventListener('click',function(){
-				
-				let html = item.getAttribute('data-url');
-
-				console.log(html);
-
-				switch (html) {
-				case 'about':
-					ifr.src= "./about.html";
-					break;
-				case 'contact':
-				ifr.src= "./contact.html";
-					break;
-				case 'foot':
-				ifr.src= "./foot.html";
-					break;
-				default:
-				ifr.src='./contact.html';
-					break;
-				}
-			}
-			)
-	});
-			
-	
-
-		
-		// console.log(html);
-
-
-// 		function pan() {
-
-// 		let deta = document.querySelectorAll('[data-url]');
-// 		let iframe = document.querySelector('iframe');
-		
-// 		deta.forEach(item =>{
-// 			let html = item.getAttribute('data-url');
-// 			console.log(html);
-// 		})
-		
-
-// 		switch (findNumber) {
-// 		case '1':
-// 			html = 'Вывести 1';
-// 			break;
-// 		case '2':
-// 			html = 'Вывести 2';
-// 			break;
-// 		default:
-// 			html = 'Данное значение не найдено';
-// 			break;
-// 		}
-//     	iframe.src = 'data:text/html;charset=utf-8,' + encodeURI(html);
-//   	}
-//   pan();
-
-
-
-		// for (let attr of datas.attributes) { // (4) весь список
-		// 	console.log( `${attr.name} = ${attr.value}` );
-    	// }
-
-
-
-
-
-		function redirect(){
-			document.getElementById('iframeID').src="./about.html";
-		}
-
-
-	</script>
 
 	<script src="js/app.min.js"></script>
 </body>

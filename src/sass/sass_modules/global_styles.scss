@@ -13,17 +13,27 @@ $link : #4088FC;
 $black: #1a1a1a;
 $br : 16px;
 
-// media sizes
-$notebook : 1280px; 
-$tab: 1024px;
-$bigMobile: 768px;
-$smallMobile: 520px;
-$verySmallMobile: 420px;
 
 .container {
 	max-width: 1300px;
 	margin: 0 auto;
 	padding: 0px 15px;
+}
+.cont {
+	max-width:800px;
+	margin: 0 auto;
+	// padding: 0px 15px;
+	height: 90vh;
+}
+code {
+    word-break: break-word;
+    word-wrap: break-word;
+    padding: 1px 4px 2px;
+    font-size: inherit;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    border-color: #d5d5d5;
 }
 
 button{
@@ -39,4 +49,11 @@ button{
 	&:hover{
 		box-shadow:(inset 10px 0 10px -5px rgba(0,0,0,0.5),inset -10px 0 10px -5px rgba(0,0,0,0.5));
 	}
+}
+
+.row{
+	width: 100%;
+	display: flex;
+	// flex-direction: row;
+	// flex-wrap: wrap;
 }
